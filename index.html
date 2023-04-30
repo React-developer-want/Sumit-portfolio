@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container flex items-center justify-between h-16 md:h-20">
+            <h1 class="relative z-30 font-semibold text-2xl">
+                John Doe
+            </h1>
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+
+                <!-- Menu list -->
+                <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </ul>   
+
+                <!-- Mobile menu  button-->
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                    <img src="./images/icons/icon-menu.svg" alt="menu">
+                </button>
+
+                <!-- Toggle Theme -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img 
+                    class="md:opacity-70 w-7 md:mt-1"
+                    src="./images/icons/icon-dark.svg" 
+                    alt="dark">
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <!-- Home section -->
+        <section id="home" class="home-section">
+            <div class="order-2 md:order-1 mt-10">
+                <h1 class="text-5xl md:text-7xl font-bold">
+                    Hi,
+                </h1>
+                <h2 class="text-5xl md:text-7xl font-bold mt-2">
+                    I am <span class="text-primary">John Doe</span>
+                </h2>
+                <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 m-10">
+                    Frontend Developer
+                </h3>
+                <a href="#portfolio" class="btn-primary">
+                    See my work
+                </a>
+            </div>
+            <div class="container-hero-image">
+                <img 
+                class="w-full h-full object-cover opacity-90 object-center"
+                src="./images/people.jpg" 
+                alt="profile">
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="py-32">
+            <!-- Describe -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+                <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary-default">
+                    <img 
+                    class="w-full h-full object-cover opacity-90"
+                    src="./images/people.jpg" 
+                    alt="profile">
+                </div>
+                <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+                    <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+                        Hi, I'm John Doe
+                    </h2>
+                    <p class="mb-3 opacity-80">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius voluptatem. Quasi dolore doloribus maiores aspernatur, doloremque provident sunt pariatur temporibus porro quae ipsa, quisquam dolores dignissimos nobis modi alias.
+                    </p>
+                    <p class="opacity-80">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi amet nemo recusandae, earum eos at vel. Facilis numquam minima, qui deleniti repellat dolores. Mollitia, molestiae? Quia in est delectus!
+                    </p>
+                </div>
+            </div>
+
+            <!-- My Skills -->
+            <div class="mt-32 text-center">
+                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+                    My Skills
+                </h2>
+                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+                    <div class="skill" data-text="Experience 3 years">
+                        <img src="./images/skills/html.png" alt="html">
+                    </div>
+                    <div class="skill" data-text="Experience 3 years">
+                        <img src="./images/skills/css.png" alt="css">
+                    </div>
+                    <div class="skill" data-text="Experience 3 years">
+                        <img src="./images/skills/javascript.png" alt="javascript">
+                    </div>
+                    <div class="skill" data-text="Experience 3 years">
+                        <img src="./images/skills/reactjs.png" alt="react">
+                    </div>
+                    <div class="skill" data-text="Experience 3 years">
+                        <img src="./images/skills/tailwindcss.png" alt="tailwindcss">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+            <!-- Dots -->
+            <div class="hidden md:flex items-center justify-between gap-3 w-full">
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-primary/60 h-3 w-4"></div>
+                <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+            </div>
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="pt-32">
+                <h2 class="portfolio-heading">
+                    My Portfolio
+                </h2>
+                <ul class="w-full md:w-5/6 space-y-10 py-5">
+                    <!-- Portfolio List -->
+                    <li class="portfolio-card">
+                        <div class="w-full md:w-1/3 h-60">
+                            <img 
+                            class="h-full w-full object-cover"
+                            src="./images/random-portfolio.jpg" 
+                            alt="portfolio">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-3xl font-bold mb-3">
+                                Portfolio 1
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum libero ducimus quis enim harum tempore officia minus eum ea cupiditate maiores reprehenderit omnis, soluta excepturi quaerat ab itaque. Placeat, quibusdam?
+                            </p>
+                            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                                <a href="#" class="portfolio-link bg-primary-default">
+                                    <img class="w-5 h-5" src="./images/icons/github.svg" alt="github">
+                                    github
+                                </a>
+                                <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                                    <img class="h-5 w-5" src="./images/icons/web.svg" alt="website">
+                                    website
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <div class="w-full md:w-1/3 h-60">
+                            <img 
+                            class="h-full w-full object-cover"
+                            src="./images/random-portfolio.jpg" 
+                            alt="portfolio">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-3xl font-bold mb-3">
+                                Portfolio 2
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum libero ducimus quis enim harum tempore officia minus eum ea cupiditate maiores reprehenderit omnis, soluta excepturi quaerat ab itaque. Placeat, quibusdam?
+                            </p>
+                            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                                <a href="#" class="portfolio-link bg-primary-default">
+                                    <img class="w-5 h-5" src="./images/icons/github.svg" alt="github">
+                                    github
+                                </a>
+                                <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                                    <img class="h-5 w-5" src="./images/icons/web.svg" alt="website">
+                                    website
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <div class="w-full md:w-1/3 h-60">
+                            <img 
+                            class="h-full w-full object-cover"
+                            src="./images/random-portfolio.jpg" 
+                            alt="portfolio">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-3xl font-bold mb-3">
+                                Portfolio 3
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum libero ducimus quis enim harum tempore officia minus eum ea cupiditate maiores reprehenderit omnis, soluta excepturi quaerat ab itaque. Placeat, quibusdam?
+                            </p>
+                            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                                <a href="#" class="portfolio-link bg-primary-default">
+                                    <img class="w-5 h-5" src="./images/icons/github.svg" alt="github">
+                                    github
+                                </a>
+                                <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                                    <img class="h-5 w-5" src="./images/icons/web.svg" alt="website">
+                                    website
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+
+        <!-- Contact Section -->
+        <section id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary-default">
+                Contact 
+            </h2>
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="#" class="contact-link bg-blue-500" >
+                    <img src="./images/icons/icon-facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="contact-link bg-pink-500" >
+                    <img src="./images/icons/icon-instagram.svg" alt="instagram">
+                </a>
+                
+                <a href="#" class="contact-link bg-blue-600" >
+                    <img src="./images/icons/icon-telegram.svg" alt="telegram">
+                </a>
+                <a href="#" class="contact-link bg-blue-400" >
+                    <img src="./images/icons/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="#" class="contact-link bg-green-400" >
+                    <img src="./images/icons/icon-whatsapp.svg" alt="whatsapp">
+                </a>
+
+
+            </div>
+        </section>
+        <h2 class="pb-10">
+            &copy; Copyright 2022 - John Doe
+        </h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
